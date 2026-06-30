@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Horizon | Luxury Hotel</title>
+    <meta name="description"
+        content="Experience timeless luxury at The Grand Horizon. A world-class 5-star hotel offering unforgettable experiences, elegant rooms, and premium amenities.">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="The Grand Horizon | Luxury Hotel">
+    <meta property="og:description" content="Experience timeless luxury at The Grand Horizon.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Playfair Display for headings, Poppins for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+
+    <!-- 1. Premium Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">The Grand Horizon</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#dining">Dining</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#booking" class="btn btn-primary">Book Now</a>
+            <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+            <label for="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <img src="data:image/jpeg;base64,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"
+                    alt="Luxury Hotel Exterior" class="hero-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title reveal-text">Experience Timeless Luxury</h1>
+                <p class="hero-subtitle reveal-text delay-1">Escape into elegance where comfort meets unforgettable
+                    experiences.</p>
+                <div class="hero-buttons reveal-text delay-2">
+                    <a href="#booking" class="btn btn-primary">Book Your Stay</a>
+                    <a href="#rooms" class="btn btn-outline">Explore Rooms</a>
+                </div>
+            </div>
+            <a href="#welcome" class="scroll-indicator" aria-label="Scroll Down">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </section>
+
+        <!-- 3. Welcome Section -->
+        <section id="welcome" class="welcome section-padding">
+            <div class="container">
+                <div class="welcome-grid">
+                    <div class="welcome-text reveal-up">
+                        <small class="section-subtitle">Welcome to The Grand Horizon</small>
+                        <h2 class="section-title">A World-Class Luxury Destination</h2>
+                        <p>Immerse yourself in unparalleled luxury. Our hotel offers a sanctuary of elegance, combining
+                            exquisite design with personalized service to create unforgettable memories. Every detail is
+                            meticulously crafted to exceed your expectations.</p>
+                        <div class="highlight-cards">
+                            <div class="highlight-card">
+                                <h3>Luxury Suites</h3>
+                                <p>Opulent comfort</p>
+                            </div>
+                            <div class="highlight-card">
+                                <h3>Ocean View</h3>
+                                <p>Breathtaking sights</p>
+                            </div>
+                            <div class="highlight-card">
+                                <h3>Fine Dining</h3>
+                                <p>Culinary excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="welcome-image reveal-up delay-1">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+                            alt="Hotel Lobby">
+                        <div class="glass-badge">5-Star Luxury</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Luxury Rooms -->
+        <section id="rooms" class="rooms section-padding dark-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <small class="section-subtitle">Accommodation</small>
+                    <h2 class="section-title">Luxury Rooms & Suites</h2>
+                </div>
+                <div class="rooms-grid">
+                    <!-- Room 1 -->
+                    <article class="room-card reveal-up">
+                        <figure class="room-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80"
+                                alt="Executive Room">
+                            <figcaption class="glass-overlay">
+                                <a href="#booking" class="btn btn-primary">Book Now</a>
+                            </figcaption>
+                        </figure>
+                        <div class="room-details">
+                            <h3>Executive Room</h3>
+                            <p class="room-desc">A perfect blend of comfort and style.</p>
+                            <div class="room-meta">
+                                <span><i class="fa-solid fa-user-group"></i> 2 Guests</span>
+                                <span><i class="fa-solid fa-expand"></i> 35m²</span>
+                            </div>
+                            <div class="room-footer">
+                                <div class="price"><strong>$1,000</strong> / night</div>
+                                <button class="btn-text">View Details</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Room 2 -->
+                    <article class="room-card reveal-up delay-1">
+                        <figure class="room-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80"
+                                alt="Signature Suite">
+                            <figcaption class="glass-overlay">
+                                <a href="#booking" class="btn btn-primary">Book Now</a>
+                            </figcaption>
+                        </figure>
+                        <div class="room-details">
+                            <h3>Signature Suite</h3>
+                            <p class="room-desc">Spacious elegance with premium amenities.</p>
+                            <div class="room-meta">
+                                <span><i class="fa-solid fa-user-group"></i> 3 Guests</span>
+                                <span><i class="fa-solid fa-expand"></i> 55m²</span>
+                            </div>
+                            <div class="room-footer">
+                                <div class="price"><strong>$1,100</strong> / night</div>
+                                <button class="btn-text">View Details</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Room 3 -->
+                    <article class="room-card reveal-up delay-2">
+                        <figure class="room-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80"
+                                alt="Royal Penthouse">
+                            <figcaption class="glass-overlay">
+                                <a href="#booking" class="btn btn-primary">Book Now</a>
+                            </figcaption>
+                        </figure>
+                        <div class="room-details">
+                            <h3>Royal Penthouse</h3>
+                            <p class="room-desc">The ultimate luxury experience with panoramic views.</p>
+                            <div class="room-meta">
+                                <span><i class="fa-solid fa-user-group"></i> 4 Guests</span>
+                                <span><i class="fa-solid fa-expand"></i> 120m²</span>
+                            </div>
+                            <div class="room-footer">
+                                <div class="price"><strong>$1,500</strong> / night</div>
+                                <button class="btn-text">View Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Hotel Amenities -->
+        <section id="amenities" class="amenities section-padding">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <small class="section-subtitle">Features</small>
+                    <h2 class="section-title">Hotel Amenities</h2>
+                </div>
+                <div class="amenities-grid">
+                    <div class="amenity-card reveal-up">
+                        <div class="icon">🏊‍♂️</div>
+                        <h3>Infinity Pool</h3>
+                    </div>
+                    <div class="amenity-card reveal-up delay-1">
+                        <div class="icon">💆‍♀️</div>
+                        <h3>Luxury Spa</h3>
+                    </div>
+                    <div class="amenity-card reveal-up delay-2">
+                        <div class="icon">🏋️‍♂️</div>
+                        <h3>Fitness Center</h3>
+                    </div>
+                    <div class="amenity-card reveal-up delay-3">
+                        <div class="icon">🍽️</div>
+                        <h3>Fine Dining</h3>
+                    </div>
+                    <div class="amenity-card reveal-up">
+                        <div class="icon">🏖️</div>
+                        <h3>Private Beach</h3>
+                    </div>
+                    <div class="amenity-card reveal-up delay-1">
+                        <div class="icon">📶</div>
+                        <h3>Free Wi-Fi</h3>
+                    </div>
+                    <div class="amenity-card reveal-up delay-2">
+                        <div class="icon">🚗</div>
+                        <h3>Airport Pickup</h3>
+                    </div>
+                    <div class="amenity-card reveal-up delay-3">
+                        <div class="icon">🛎️</div>
+                        <h3>24/7 Room Service</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Restaurant Section -->
+        <section id="dining" class="restaurant section-padding dark-section">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="restaurant-image reveal-up">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1974&auto=format&fit=crop"
+                            alt="Fine Dining Restaurant">
+                    </div>
+                    <div class="restaurant-content reveal-up delay-1">
+                        <small class="section-subtitle">Culinary Journey</small>
+                        <h2 class="section-title">Exquisite Fine Dining</h2>
+                        <p>Savor culinary masterpieces prepared by our award-winning chefs. Our restaurant offers a
+                            diverse menu featuring local flavors and international cuisine.</p>
+                        <ul class="dining-list">
+                            <li><strong>Chef Special:</strong> Truffle Risotto</li>
+                            <li><strong>Breakfast:</strong> International Buffet</li>
+                            <li><strong>Wine Collection:</strong> 500+ Vintage Bottles</li>
+                        </ul>
+                        <button class="btn btn-primary mt-2">Reserve Table</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Photo Gallery -->
+        <section id="gallery" class="gallery section-padding">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <small class="section-subtitle">Visuals</small>
+                    <h2 class="section-title">Photo Gallery</h2>
+                </div>
+                <div class="gallery-grid">
+                    <figure class="gallery-item reveal-up">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUn5if-qGsMvCHmvCy8Hu63h5jWMap3mzkSIK-ayEPEw&s=10"
+                            alt="Hotel Exterior">
+                        <div class="overlay"><span>Exterior</span></div>
+                    </figure>
+                    <figure class="gallery-item reveal-up delay-1">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+                            alt="Lobby">
+                        <div class="overlay"><span>Lobby</span></div>
+                    </figure>
+                    <figure class="gallery-item reveal-up delay-2">
+                        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80"
+                            alt="Luxury Room">
+                        <div class="overlay"><span>Rooms</span></div>
+                    </figure>
+                    <figure class="gallery-item reveal-up">
+                        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80"
+                            alt="Infinity Pool">
+                        <div class="overlay"><span>Pool</span></div>
+                    </figure>
+                    <figure class="gallery-item reveal-up delay-1">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80"
+                            alt="Restaurant">
+                        <div class="overlay"><span>Dining</span></div>
+                    </figure>
+                    <figure class="gallery-item reveal-up delay-2">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80"
+                            alt="Luxury Spa">
+                        <div class="overlay"><span>Spa</span></div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Customer Testimonials -->
+        <section id="reviews" class="testimonials section-padding dark-section">
+            <div class="container text-center">
+                <small class="section-subtitle reveal-up">Testimonials</small>
+                <h2 class="section-title reveal-up delay-1">What Our Guests Say</h2>
+
+                <div class="testimonial-grid reveal-up delay-2">
+                    <div class="testimonial-card glass-panel text-center">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>"An absolutely breathtaking experience. The service was
+                            impeccable and the views from our suite were unforgettable. We will definitely return."
+                        </blockquote>
+                        <div class="guest-info flex-column">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+                                alt="John Doe">
+                            <div>
+                                <strong>John Doe</strong>
+                                <span>United Kingdom</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-panel text-center">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>"The Royal Penthouse was spectacular. The fine dining
+                            restaurant exceeded our expectations. A true 5-star experience."</blockquote>
+                        <div class="guest-info flex-column">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                                alt="Sarah Smith">
+                            <div>
+                                <strong>Sarah Smith</strong>
+                                <span>New York, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-panel text-center">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>"I loved the luxury spa and infinity pool! The staff went
+                            above and beyond to make our anniversary special."</blockquote>
+                        <div class="guest-info flex-column">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                                alt="Elena Rodriguez">
+                            <div>
+                                <strong>Elena Rodriguez</strong>
+                                <span>Madrid, Spain</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Pricing Packages -->
+        <section class="packages section-padding">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <small class="section-subtitle">Offers</small>
+                    <h2 class="section-title">Pricing Packages</h2>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card reveal-up">
+                        <h3>Executive Room</h3>
+                        <div class="price"><span>$</span>1000<small>/night</small></div>
+                        <ul>
+                            <li>Free Wi-Fi</li>
+                            <li>Breakfast Included</li>
+                            <li>Pool Access</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline">Book Now</a>
+                    </div>
+                    <div class="pricing-card featured glass-panel reveal-up delay-1">
+                        <div class="popular-badge">Most Popular</div>
+                        <h3>Signature Suite</h3>
+                        <div class="price"><span>$</span>1100<small>/night</small></div>
+                        <ul>
+                            <li>Free Wi-Fi</li>
+                            <li>Breakfast Included</li>
+                            <li>Pool & Spa Access</li>
+                            <li>Airport Transfer</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-primary">Book Now</a>
+                    </div>
+                    <div class="pricing-card reveal-up delay-2">
+                        <h3>Royal Penthouse</h3>
+                        <div class="price"><span>$</span>1500<small>/night</small></div>
+                        <ul>
+                            <li>All Inclusive</li>
+                            <li>Private Butler</li>
+                            <li>Penthouse View</li>
+                            <li>Helicopter Transfer</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Special Offers & 11. Booking Form -->
+        <section id="booking" class="booking-section section-padding dark-section">
+            <div class="container">
+                <div class="booking-grid">
+                    <div class="special-offers reveal-up">
+                        <small class="section-subtitle">Promotions</small>
+                        <h2 class="section-title">Special Offers</h2>
+                        <div class="offer-cards">
+                            <div class="offer-card glass-panel">
+                                <h3>Weekend Escape</h3>
+                                <p>Get 20% off when you book for the weekend.</p>
+                            </div>
+                            <div class="offer-card glass-panel">
+                                <h3>Honeymoon Package</h3>
+                                <p>Complimentary champagne and spa for couples.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-form-wrapper glass-panel reveal-up delay-1">
+                        <h3>Book Your Stay</h3>
+                        <form id="bookForm" class="booking-form">
+                            <div class="form-group">
+                                <label for="checkin">Check-In Date</label>
+                                <input type="date" id="checkin" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout">Check-Out Date</label>
+                                <input type="date" id="checkout" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="adults">Adults</label>
+                                    <select id="adults" required>
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="children">Children</label>
+                                    <select id="children">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="roomType">Room Type</label>
+                                <select id="roomType" required>
+                                    <option value="executive">Executive Room</option>
+                                    <option value="signature">Signature Suite</option>
+                                    <option value="royal">Royal Penthouse</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="requests">Special Requests</label>
+                                <textarea id="requests" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Confirm Booking</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. Hotel Statistics -->
+        <section class="statistics section-padding">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal-up">
+                        <div class="counter">500</div>
+                        <p>Luxury Rooms</p>
+                    </div>
+                    <div class="stat-item reveal-up delay-1">
+                        <div class="counter">25000</div>
+                        <p>Happy Guests</p>
+                    </div>
+                    <div class="stat-item reveal-up delay-2">
+                        <div class="counter">18</div>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item reveal-up delay-3">
+                        <div class="counter">42</div>
+                        <p>Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 14. FAQ -->
+        <section class="faq section-padding dark-section">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <small class="section-subtitle">Information</small>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-list reveal-up delay-1">
+                    <details class="faq-item">
+                        <summary>What are the check-in and check-out times?</summary>
+                        <p>Check-in is at 3:00 PM and check-out is at 11:00 AM. Early check-in and late check-out can be
+                            requested based on availability.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Are pets allowed in the hotel?</summary>
+                        <p>Yes, we are a pet-friendly hotel. A pet fee applies and we offer specialized pet amenities.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What is your cancellation policy?</summary>
+                        <p>Cancellations made 48 hours prior to arrival are fully refundable. Standard rates apply for
+                            late cancellations.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do you offer airport transportation?</summary>
+                        <p>Yes, we offer luxury airport transfers. Please contact our concierge to arrange this prior to
+                            your arrival.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- 15. Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="contact-form-wrapper glass-panel reveal-up">
+                        <h3>Get In Touch</h3>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info reveal-up delay-1">
+                        <h3>Contact Information</h3>
+                        <p>Reach out to us for any inquiries or special arrangements.</p>
+                        <ul class="info-list">
+                            <li><i class="fa-solid fa-location-dot"></i> 123 Luxury Ave, Beverly Hills, CA</li>
+                            <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fa-solid fa-envelope"></i> reservations@grandhorizon.com</li>
+                            <li><i class="fa-solid fa-clock"></i> 24/7 Front Desk Support</li>
+                        </ul>
+                        <!-- Styled Map Placeholder -->
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.71658428574!2d-118.4038166847814!3d34.07681648059881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0xd6c7c379fd081ed1!2sBeverly%20Hills%2C%20CA!5e0!3m2!1sen!2sus!4v1628103316104!5m2!1sen!2sus"
+                                width="100%" height="250" style="border:0; filter: invert(90%) hue-rotate(180deg);"
+                                allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 16. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand">
+                    <a href="#" class="logo-text">The Grand Horizon</a>
+                    <p>Experience the pinnacle of luxury, comfort, and personalized service at our world-class
+                        destination.</p>
+                </div>
+                <div class="footer-col links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#rooms">Rooms & Suites</a></li>
+                        <li><a href="#dining">Fine Dining</a></li>
+                        <li><a href="#amenities">Spa & Wellness</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Grand Horizon. All rights reserved.</p>
+                <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
